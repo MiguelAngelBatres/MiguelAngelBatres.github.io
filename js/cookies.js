@@ -69,6 +69,6 @@ function setCookie(name,value){
 // TOGGLE MENU FUNCTION
 
 function toggleMenu(){
-    const menu = document.getElementById("menuboton")
+    const menu = document.getElementById("opciones")
      menu.style.display = "flex" ? "none" : "flex"
 }
