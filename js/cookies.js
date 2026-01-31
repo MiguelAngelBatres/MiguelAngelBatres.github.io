@@ -42,9 +42,9 @@ function changelanguage(){
 function redirect(path){
     let finalPath
     if(pathname.match("/es/")){
-       finalPath = path ? `/${path}/es/index.html` : `/es/index.html`
+       finalPath = path ? `/MaleficariusCode/${path}/es/index.html` : `/MaleficariusCode/es/index.html`
     }else{
-       finalPath = path ? `/${path}/index.html` : `/index.html`
+       finalPath = path ? `/MaleficariusCode/${path}/index.html` : `/MaleficariusCode/index.html`
     }
     location.href = location.origin + finalPath
 }
