@@ -65,3 +65,10 @@ function setCookie(name,value){
     let expires = `expires=${today.toUTCString()}`
     document.cookie = `${name}=${value};${expires};path=/`
 }
+
+// TOGGLE MENU FUNCTION
+
+function toggleMenu(){
+    const menu = document.getElementById("menuboton")
+     menu.style.display = "flex" ? "none" : "flex"
+}
