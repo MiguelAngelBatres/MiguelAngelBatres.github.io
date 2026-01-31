@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="../" />
+    <base href="./" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BL Dev</title>
-    <link id="theme-style" rel="stylesheet" href="css/styles.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="icon" href="/imagenes/perfil.gif" id="favicon" />
-    <script src="./js/snake.js" defer></script>
-    <script src="./js/cookies.js"></script>
+    <link rel="icon" href="./imagenes/perfil.gif" id="favicon" />
   </head>
   <body>
     <div class="navbar">
@@ -40,7 +37,7 @@
           Hobbies
         </button>
         <button type="button" onclick="changelanguage()" class="lengbutton">
-          Spanish Lenguage
+          Spanish Language
         </button>
         <!-- theme -->
         <button
@@ -53,14 +50,14 @@
         </button>
       </div>
     </div>
-    <img src="imagenes/perfil.gif" alt="Animated GIF" class="moving-gif" />
+    <img src="./imagenes/perfil.gif" alt="Animated GIF" class="moving-gif" />
 
     <div class="content"></div>
     <div class="container">
       <div class="cuadro">
         <div class="perfil">
           <!-- Image based on Google Images -->
-          <img src="/imagenes/perfil.gif" alt="Photo" class="fotoperfil" />
+          <img src="./imagenes/perfil.gif" alt="Photo" class="fotoperfil" />
           <h1>My Photo</h1>
         </div>
         <hr />
@@ -95,11 +92,11 @@
         </p>
         <p class="centrado">Programming Languages:</p>
         <!-- Images taken from Google Images -->
-        <div class="programing_lenguages_images">
-          <img src="/imagenes/c-.png" alt="C" class="c_imagen" />
-          <img src="/imagenes/java.png" alt="Java" class="c_imagen" />
+        <div class="programing_Languages_images">
+          <img src="./imagenes/c-.png" alt="C" class="c_imagen" />
+          <img src="./imagenes/java.png" alt="Java" class="c_imagen" />
           <img
-            src="/imagenes/secuencia-de-comandos-de-java.png"
+            src="./imagenes/secuencia-de-comandos-de-java.png"
             alt="Java Commands"
             class="c_imagen"
           />
@@ -215,5 +212,8 @@
       <p>© 2022 Miguel Angel Batres Luna</p>
       <p>ID: 350553</p>
     </footer>
+ 
   </body>
+     <script src="./js/snake.js" defer></script>
+    <script src="./js/cookies.js"></script>
 </html>

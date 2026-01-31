@@ -86,7 +86,7 @@ a {
     z-index: 1000;
 }
 
-.lenguage {
+.Language {
     color: #e0e0d8;
     margin: auto;
     font-size: 1.2em;
@@ -100,7 +100,6 @@ a {
     font-size: 1.25rem;
     margin: 0;
     padding: 0.3125rem 1.875rem;
-    transition: background-color 0.5s ease;
 }
 
 .lengbutton:hover,
@@ -296,7 +295,7 @@ hr {
     padding: 0.9375rem 0.625rem 0 0.625rem;
 }
 
-.programing_lenguages_images,
+.programing_Languages_images,
 .social {
     display: inline-flex;
     justify-content: center;

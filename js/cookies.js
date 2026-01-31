@@ -1,111 +1,67 @@
+// NECESSARY CONSTANTS
+const pathname = location.pathname
+let themebuttontext = document.getElementById("theme-button")
 
-    document.documentElement.setAttribute('data-theme', theme);
-    actualizaTheme();
+setTheme() // necessary for it to persist
 
-    document.getElementById('menuboton').addEventListener('click', function() {
-        const opciones = document.getElementById('opciones');
-    
-        if (window.innerWidth <= 768) {
-            if (opciones.style.display === 'flex') {
-                opciones.style.display = 'none'; // Oculta los botones
-            } else {
-                opciones.style.display = 'flex'; // Muestra los botones
-            }
-        }
-    });
-    window.addEventListener('click', function(event) {
-        const opciones = document.getElementById('opciones');
-        if (window.innerWidth <= 768) {
-            if (document.getElementById('menuboton').style.display != 'none') {
-                if (!event.target.closest('.navbar')) {
-                    opciones.style.display = 'none'; // Oculta los botones si se hace clic fuera del navbar
-                }
-            }
-        }
-    });
-    
-window.addEventListener('resize', function() {
-    const opciones = document.getElementById('opciones');
-    if (window.innerWidth > 768) {
-        opciones.style.display = 'flex'; // Muestra los botones
-    } else {
-        opciones.style.display = 'none'; // Oculta los botones
-    }
-});
-function getStoredtheme(){
-    var theme = localStorage.getItem('theme');
-    if(theme == 'dark'){
-        return 'dark';
-    } else { 
-        return 'light';
-    }
-}
+
+// CHANGE THEME FUNCTION
 function setStoredtheme(){
- 
-    if(getStoredtheme() === 'dark'){
-        localStorage.setItem('theme', 'light');
-        document.documentElement.setAttribute('data-theme', 'light');
-    } else {
-        localStorage.setItem('theme', 'dark');
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    actualizaTheme();
-   
+  if(getCookie("Theme")==="Light"){
+    setCookie("Theme","Dark")
+  }else{
+    setCookie("Theme","Light")
+  }
+  setTheme()
 }
-function redirect(baseFolder) {
-    const language = localStorage.getItem('language');
 
-    if (language === 'es') {
-        window.location.href = `${baseFolder}/es/index.html`;
-    } else {
-        window.location.href = `${baseFolder}/index.html`;
+// THEME PERSISTENCE FUNCTION
+function setTheme(){
+    let isSpanish = getCookie("Language")=="Español" ? true : false
+    if(getCookie("Theme")==="Light"){
+        document.documentElement.setAttribute('data-theme','light')
+        isSpanish ? themebuttontext.innerHTML = "Modo Oscuro" : themebuttontext.innerHTML = "Dark Mode"
+    }else{
+        document.documentElement.setAttribute('data-theme','dark')
+        isSpanish ? themebuttontext.innerHTML = "Modo Claro" : themebuttontext.innerHTML = "Light Mode"
     }
 }
-function actualizaTheme(){
-    var themeButton = document.getElementById('theme-button');
 
-    if(getStoredtheme() === 'dark'){
-        if(localStorage.getItem('language') === 'es'){
-            themeButton.textContent = 'Modo Claro';
-        } else {
-            themeButton.textContent = 'Light Mode';
-        }
-    } else {
-        if(localStorage.getItem('language') === 'es'){
-            themeButton.textContent = 'Modo Oscuro';
-        } else {
-            themeButton.textContent = 'Dark Mode';
-        }
-    }
-}
-function changepath(){
-    let currentPath = window.location.pathname;
-    let params = window.location.search;
-    let newPath;
-    var language = localStorage.getItem('language');
-    if (currentPath.endsWith('/') === true) {
-        if (language === 'es') {
-            newPath = currentPath + 'es';
-        } else {
-            newPath = currentPath.replace('es/', '');
-        }
-    } else if (currentPath.endsWith('index.html') === true) { 
-        if (language === 'es') {
-            newPath = currentPath.replace('/index.html', '/es/index.html');
-        } else {
-            newPath = currentPath.replace('/es/index.html', '/index.html');
-        }
-    }
-    if (newPath !== undefined) {
-        window.location.href = newPath + params;
-    }
-}
+// CHANGE LANGUAGE FUNCTION
 function changelanguage(){
-    var language = localStorage.getItem('language');
-    if(language == 'en'){
-        localStorage.setItem('language', 'es');
-    } else {
-        localStorage.setItem('language', 'en');
+     if(pathname.match("/es/")){
+        setCookie("Language","Ingles")
+       location.href = location.href.replace("/es/","/")
+    }else{
+        setCookie("Language","Español")
+       location.href = location.href.replace("/index.html","/es/index.html")
     }
-    changepath();
+}
+
+// REDIRECT PATH FUNCTION
+function redirect(path){
+    let finalPath
+    if(pathname.match("/es/")){
+       finalPath = path ? `/${path}/es/index.html` : `/es/index.html`
+    }else{
+       finalPath = path ? `/${path}/index.html` : `/index.html`
+    }
+    location.href = location.origin + finalPath
+}
+
+// COOKIE FUNCTIONS
+function getCookie(name){
+    let cookies = document.cookie.split(";")
+    for(let i=0;i<cookies.length;i++){
+        let cookie = cookies[i].replace(" ","").split("=")
+        if(cookie[0]==name){
+            return cookie[1]
+        }
+    }
+}
+function setCookie(name,value){
+    const today = new Date()
+    today.setDate(today.getDate() + 7)
+    let expires = `expires=${today.toUTCString()}`
+    document.cookie = `${name}=${value};${expires};path=/`
 }
