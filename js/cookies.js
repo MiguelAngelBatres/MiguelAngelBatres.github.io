@@ -31,10 +31,10 @@ function setTheme(){
 function changelanguage(){
      if(pathname.match("/es/")){
         setCookie("Language","Ingles")
-       location.href = location.href.replace(`${basehref}es/`,`${basehref}`)
+       location.href = location.href.replace(`es/`,``)
     }else{
         setCookie("Language","Español")
-       location.href = location.href.replace(`${basehref}index.html`,`/MaleficariusCode/es/index.html`)
+       location.href = location.href.replace(`/index.html`,`/es/index.html`)
     }
 }
 
