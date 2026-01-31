@@ -1,7 +1,7 @@
 # MaleficariusCode
 **Bienvenido a MaleficariusCode: Tu Destino Tecnológico**
 
-¡Saludos! Soy Miguel Angel Batres Luna, y te doy la bienvenida a MaleficariusCode, un espacio donde la magia de la programación cobra vida. Aquí, compartiré contigo mi fascinante viaje a través de proyectos de programación y blogs que exploran el emocionante mundo de la tecnología.
+¡Saludos! Soy Miguel Ángel Batres Luna, y te doy la bienvenida a MaleficariusCode, un espacio donde la magia de la programación cobra vida. Aquí, compartiré contigo mi fascinante viaje a través de proyectos de programación y blogs que exploran el emocionante mundo de la tecnología.
 
 **¿Qué te espera en MaleficariusCode?**
 
@@ -22,7 +22,7 @@ Soy un apasionado desarrollador, y esta plataforma es mi lienzo digital. Mi obje
 # MaleficariusCode
 **Welcome to MaleficariusCode: Your Technological Destiny**
 
-Greetings! I'm Miguel Angel Batres Luna, and I welcome you to MaleficariusCode, a space where the magic of programming comes to life. Here, I'll share with you my fascinating journey through programming projects and blogs that explore the exciting world of technology.
+Greetings! I'm Miguel Ángel Batres Luna, and I welcome you to MaleficariusCode, a space where the magic of programming comes to life. Here, I'll share with you my fascinating journey through programming projects and blogs that explore the exciting world of technology.
 
 **What Awaits You at MaleficariusCode?**
 

@@ -28,7 +28,7 @@ function setTheme(){
 }
 
 // CHANGE LANGUAGE FUNCTION
-function changelanguage(){
+function chÁngelanguage(){
      if(pathname.match("/es/")){
         setCookie("Language","Ingles")
        location.href = location.href.replace(`es/`,``)
