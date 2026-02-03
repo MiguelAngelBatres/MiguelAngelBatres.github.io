@@ -1,7 +1,6 @@
 // NECESSARY CONSTANTS
 const pathname = location.pathname
 let themebuttontext = document.getElementById("theme-button")
-const basehref = "/MaleficariusCode/"
 setTheme() // necessary for it to persist
 
 
@@ -34,7 +33,7 @@ function changelanguage(){
        location.href = location.href.replace(`es/`,``)
     }else{
         setCookie("Language","Español")
-       location.href = location.href.replace(`/index.html`,`/es/index.html`)
+       location.href = location.href.replace(`/`,`/es/`)
     }
 }
 
@@ -42,9 +41,9 @@ function changelanguage(){
 function redirect(path){
     let finalPath
     if(pathname.match("/es/")){
-       finalPath = path ? `${basehref}${path}/es/index.html` : `${basehref}es/index.html`
+       finalPath = path ? `/${path}/es/` : `/es/`
     }else{
-       finalPath = path ? `${basehref}${path}/index.html` : `${basehref}index.html`
+       finalPath = path ? `/${path}/` : `/`
     }
     location.href = location.origin + finalPath
 }
