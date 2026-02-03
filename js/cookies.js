@@ -2,7 +2,7 @@
 const pathname = location.pathname
 let themebuttontext = document.getElementById("theme-button")
 setTheme() // necessary for it to persist
-
+console.log(pathname)
 
 // CHANGE THEME FUNCTION
 function setStoredtheme(){
@@ -31,6 +31,9 @@ function changelanguage(){
      if(pathname.match("/es/")){
         setCookie("Language","Ingles")
        location.href = location.href.replace(`es/`,``)
+    }else if(pathname.match("/")){
+       setCookie("Language","Español")
+       location.href = location.href + "es/"
     }else{
         setCookie("Language","Español")
        location.href = location.href.replace(`/`,`/es/`)
