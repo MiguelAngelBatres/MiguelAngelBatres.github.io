@@ -2,7 +2,6 @@
 const pathname = location.pathname
 let themebuttontext = document.getElementById("theme-button")
 setTheme() // necessary for it to persist
-console.log(pathname)
 
 // CHANGE THEME FUNCTION
 function setStoredtheme(){
