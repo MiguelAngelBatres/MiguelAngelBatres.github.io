@@ -1,39 +1,82 @@
-# MaleficariusCode
-**Bienvenido a MaleficariusCode: Tu Destino Tecnológico**
-
-¡Saludos! Soy Miguel Ángel Batres Luna, y te doy la bienvenida a MaleficariusCode, un espacio donde la magia de la programación cobra vida. Aquí, compartiré contigo mi fascinante viaje a través de proyectos de programación y blogs que exploran el emocionante mundo de la tecnología.
-
-**¿Qué te espera en MaleficariusCode?**
-
-- **Proyectos Innovadores:** Sumérgete en una colección de proyectos creativos en los que he trabajado. Desde aplicaciones hasta soluciones únicas, cada proyecto cuenta una historia única.
-
-- **Blogs Apasionantes:** Descubre blogs que van más allá de lo convencional. Exploraremos tecnologías emergentes, características de frameworks, tutoriales detallados y reflexiones sobre el vasto universo de la programación.
-
-- **Un Vistazo a Mi Mundo:** MaleficariusCode es más que un sitio web; es mi portafolio digital. Aquí, comparto mi experiencia y conocimientos como desarrollador, invitándote a unirte a este viaje tecnológico.
-
-**Detrás de MaleficariusCode**
-
-Soy un apasionado desarrollador, y esta plataforma es mi lienzo digital. Mi objetivo es crear un espacio interactivo donde la tecnología y la creatividad se encuentren. Con proyectos emocionantes y blogs cautivadores, quiero inspirarte a explorar el vasto mundo de la programación.
-
-¡Adéntrate en MaleficariusCode y descubre un universo de posibilidades tecnológicas! ¡Gracias por unirte a esta emocionante travesía!
 
 ---
 
-# MaleficariusCode
-**Welcome to MaleficariusCode: Your Technological Destiny**
+# 🌌 **Professional Portfolio**
 
-Greetings! I'm Miguel Ángel Batres Luna, and I welcome you to MaleficariusCode, a space where the magic of programming comes to life. Here, I'll share with you my fascinating journey through programming projects and blogs that explore the exciting world of technology.
+### 👨‍💻 *Miguel Ángel Batres Luna*
 
-**What Awaits You at MaleficariusCode?**
+**Software Developer | Systems Engineer | Technology Enthusiast**
 
-- **Innovative Projects:** Immerse yourself in a collection of creative projects I've worked on. From applications to unique solutions, each project tells a unique story.
+Welcome to my personal portfolio.
+This site is my digital introduction: a place where I showcase my projects, skills, certifications, and professional experience.
 
-- **Exciting Blogs:** Discover blogs that go beyond the conventional. We'll explore emerging technologies, framework features, detailed tutorials, and reflections on the vast universe of programming.
+Everything here represents who I am as a developer—functional applications, technical solutions, experiments, and academic work.
 
-- **A Glimpse into My World:** MaleficariusCode is more than a website; it's my digital portfolio. Here, I share my experience and knowledge as a developer, inviting you to join this technological journey.
+---
 
-**Behind MaleficariusCode**
+## 🚀 What Will You Find Here?
 
-I'm a passionate developer, and this platform is my digital canvas. My goal is to create an interactive space where technology and creativity converge. With exciting projects and captivating blogs, I aim to inspire you to explore the vast world of programming.
+### 🗂️ Real Projects
 
-Dive into MaleficariusCode and discover a universe of technological possibilities! Thank you for joining this exciting journey!
+A structured collection of projects I have developed:
+
+* Complete web applications
+* Software tools
+* Interactive games
+* Database-driven systems
+* Technical experiments and prototypes
+
+Each project includes technical details, technologies used, and working demos.
+
+---
+
+### 🎓 Education & Certifications
+
+This portfolio also works as my online résumé:
+
+* Academic degrees
+* Professional certifications
+* Completed courses
+* Demonstrable technical skills
+
+All gathered in one place to reflect my professional growth.
+
+---
+
+### 🛠️ Technologies I Work With
+
+* **Languages:** JavaScript, Python, Java, C++
+* **Backend:** Node.js, Express
+* **Frontend:** HTML, CSS, React
+* **Databases:** MySQL, MongoDB
+* **Tools:** Git, Linux, Docker
+* **Game Dev:** Phaser
+* **Environments:** Linux, Windows
+
+---
+
+### 🌗 User Experience
+
+Designed to be clean, modern, and accessible:
+
+* 🌎 Available in **Spanish and English**
+* 🌓 Light/Dark mode
+* 📱 Fully responsive design
+* 🎯 Professional and intuitive navigation
+
+---
+
+## 📬 Contact
+
+Interested in my work or collaboration?
+
+* **Email:** [[maesito23@hotmail.com](maesito23@hotmail.com)]
+* **GitHub:** [https://github.com/MiguelAngelBatres/](https://github.com/MiguelAngelBatres/)
+
+---
+
+Thank you for visiting my portfolio!
+Explore my projects and discover my technological journey.
+
+---
+
