@@ -1,38 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <base href="../">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Certifications | BL Dev</title>
-    <link id="theme-style" rel="stylesheet" href="css/styles.css?v=20261004-certification-cards">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link rel="icon" href="imagenes/perfil.gif" id="favicon">
+    <link
+      id="theme-style"
+      rel="stylesheet"
+      href="css/styles.css?v=20261004-certification-cards"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/perfil.gif" id="favicon" />
   </head>
   <body>
     <div class="navbar">
       <div class="logo">
-        <a onclick="redirect('')"><h1 class="logo_text">Miguel Ángel Batres Luna</h1></a>
+        <a onclick="redirect('')"
+          ><h1 class="logo_text">Miguel Ángel Batres Luna</h1></a
+        >
       </div>
-      <button type="button" class="menuboton" id="menuboton" onclick="toggleMenu()">Menu</button>
+      <button
+        type="button"
+        class="menuboton"
+        id="menuboton"
+        onclick="toggleMenu()"
+      >
+        Menu
+      </button>
       <div class="opciones" id="opciones">
-        <button type="button" class="lengbutton" onclick="redirect('proyectos')">Projects</button>
-        <button type="button" class="lengbutton" onclick="redirect('hobbies')">Hobbies</button>
-        <button type="button" class="lengbutton" onclick="redirect('certificaciones')">Certifications</button>
-        <button type="button" class="lengbutton" onclick="changelanguage()">Spanish Language</button>
-        <button id="theme-button" type="button" class="lengbutton" onclick="setStoredtheme()">Dark Mode</button>
+        <button
+          type="button"
+          class="lengbutton"
+          onclick="redirect('proyectos')"
+        >
+          Projects
+        </button>
+        <button type="button" class="lengbutton" onclick="redirect('hobbies')">
+          Hobbies
+        </button>
+        <button
+          type="button"
+          class="lengbutton"
+          onclick="redirect('certificaciones')"
+        >
+          Certifications
+        </button>
+        <button type="button" class="lengbutton" onclick="changelanguage()">
+          Spanish Language
+        </button>
+        <button
+          id="theme-button"
+          type="button"
+          class="lengbutton"
+          onclick="setStoredtheme()"
+        >
+          Dark Mode
+        </button>
       </div>
     </div>
-    <img src="imagenes/perfil.gif" alt="Animated ghost" class="moving-gif">
+    <img src="imagenes/perfil.gif" alt="Animated ghost" class="moving-gif" />
     <div class="content"></div>
 
     <main class="certifications-page">
       <header class="certifications-heading">
-        <h1>Certifications</h1>
-        <p>Professional certificates and completed courses.</p>
+        <div class="container">
+          <div class="cuadro">
+            <hr />
+            <h1 class="centrado">Hobbies</h1>
+            <hr />
+          </div>
+        </div>
       </header>
-      <section class="certifications-grid" aria-label="Certifications">
-      </section>
+      <section
+        class="certifications-grid"
+        aria-label="Certifications"
+      ></section>
       <p class="certifications-empty">No certifications added yet.</p>
     </main>
     <footer>
@@ -41,5 +87,6 @@
     </footer>
     <script src="js/certificaciones.js"></script>
     <script src="js/cookies.js"></script>
+    <script src="js/snake.js"></script>
   </body>
 </html>
