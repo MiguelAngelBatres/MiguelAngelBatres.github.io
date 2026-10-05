@@ -451,6 +451,7 @@ p {
     overflow: hidden;
     min-width: 0;
     max-width: 20rem;
+    z-index: 500;
     border-radius: 0.75rem;
     background: var(--background-color);
     box-shadow: 0.25rem 0.25rem 0.75rem #0006;
